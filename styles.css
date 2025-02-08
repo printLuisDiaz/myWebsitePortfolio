@@ -1,0 +1,38 @@
+body {
+
+    align-items: center;
+    height:fit-content;
+    background-color: darkslategray;
+    color:rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    color: rgb(0, 32, 100);
+}
+
+a:visited {
+    color:rgb(90, 0, 102);
+}
+
+a:hover, a:active {
+    color: rgb(0, 107, 18);
+}
+h1 {
+    color: crimson;
+}
+
+p {
+    color: black;
+}
+
+hr {
+    border-color: rgb(0, 0, 0);
+}
+
+table, tr, th, td, caption {
+    border: 1px solid #000000;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
