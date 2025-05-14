@@ -1,12 +1,61 @@
+header{
+    border-style: solid;
+}
+
+nav {
+
+    border-style:solid;
+    margin: 10px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(179, 212, 243);
+}
+
 body {
 
+    border-style: solid;
+    margin-left: 200px;
+    padding-left: 20px;
     align-items: center;
     height:fit-content;
-    background-color: darkslategray;
+    background-color: rgb(233, 233, 233);
     color:rgb(0, 0, 0);
     font-family: 'Times New Roman', Times, serif;
 }
 
+main{
+
+    border-style: solid;
+    margin: 10px;
+}
+
+section {
+
+    border-style: solid;
+    margin: 10px;
+}
+
+article {
+
+    border-style: solid;
+    margin: 10px;
+}
+
+aside {
+
+    border-style: solid;
+
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #c0e8ff;
+    overflow-x: hidden;
+    
+
+}
 a {
     color: rgb(0, 32, 100);
 }
@@ -19,7 +68,7 @@ a:hover, a:active {
     color: rgb(0, 107, 18);
 }
 h1 {
-    color: crimson;
+    color: rgb(0, 0, 0);
 }
 
 p {
@@ -28,11 +77,4 @@ p {
 
 hr {
     border-color: rgb(0, 0, 0);
-}
-
-table, tr, th, td, caption {
-    border: 1px solid #000000;
-    font-family: 'Courier New', Courier, monospace;
-    border-collapse: collapse;
-    padding: 0.5rem;
 }
