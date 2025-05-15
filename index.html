@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"> <!--Start the document-->
+<html lang="en"> 
     <head>
-        <!--"Meta refers to the metadata of the website like (character set, authors name, etc..)"-->
         <meta charset="UTF-8">
         <meta name="author" content="Luis Diaz">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,50 +10,78 @@
 
         <!-- Contains Website Icon and other things. -->
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css">
         <link rel="apple-touch-icon" sizes="180x180" href="Assets/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png">
         <link rel="manifest" href="Assets/site.webmanifest">
 
-        <header>
-            <h1>Header</h1>
-        </header>
-
     </head>
-    
-    <nav>
-        <h1>Navigation</h1>
-    </nav>
-    
     <body>
-        <h1>This is the Body</h1>
-            <main>
-                <h1>This is Main</h1>
-                <section>
-                    <h1>This is a Section</h1>
-                        <article>
-                            <h1>This is an Article within a Section</h1>
-                            
-
-                        </article>
-                </section>
-
-                <article>
-                    <h1>This is an Article</h1>
-                        <section>
-                            <h1>This is a Section within an Article</h1>
-
-                        </section>
-                </article>
+        <header>
+          <h1>Luis J Diaz</h1>
+          <p>Aspiring Software Developer | Creative Thinker</p>
+          <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
+      
+        <main class="grid-container">
+            <section id="about" class="about-section">
+                <div class="about-content">
+                  <img src="assets/Img/WaterZombie.jpg" alt="Your Name" class="profile-pic" />
+                  <div>
+                    <h2>Who Am I?</h2>
+                    <p>I’m a student developer passionate about coding, design, and building useful digital experiences. I'm currently studying Computing and learning to become a front-end and game developer.</p>
+                    <a href="biography.html" class="about-btn">Learn More</a>
+                  </div>
+                </div>
+              </section>
+      
+          <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+              <div class="project">
+                <h3>To-Do App</h3>
+                <p>A simple to-do list web app using JavaScript, HTML, and CSS.</p>
+                <a href="https://github.com/yourusername/todo-app">View on GitHub</a>
+              </div>
+              <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>This website! A responsive, clean site to showcase my work.</p>
+                <a href="https://github.com/yourusername/portfolio">View on GitHub</a>
+              </div>
+              <!-- Add more project cards as needed -->
+            </div>
+          </section>
+      
+          <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>React (learning)</li>
+            </ul>
+          </section>
+      
+          <section id="contact">
+            <h2>Contact</h2>
+            <p>
+              <a href="https://github.com/printLuisDiaz">GitHub</a> | 
+              <a href="https://www.linkedin.com/in/luis-diaz-4768b6348/">LinkedIn</a>
+            </p>
+          </section>
         </main>
-
-        <aside>
-            <h1>This is an aside</h1>
-            
-        </aside>
-    </body>
-
-    <footer>
-
-    </footer>
-</html> <!--End the document with "!"-->
+      
+        <footer>
+          <p>© 2025 Luis J Diaz Portfolio</p>
+        </footer>
+      
+        <script src="script.js"></script>
+      </body>
+      </html>

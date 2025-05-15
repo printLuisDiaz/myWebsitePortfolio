@@ -1,80 +1,186 @@
-header{
-    border-style: solid;
-}
-
-nav {
-
-    border-style:solid;
-    margin: 10px;
-    position: sticky;
-    top: 0;
-    background-color: rgb(179, 212, 243);
-}
-
-body {
-
-    border-style: solid;
-    margin-left: 200px;
-    padding-left: 20px;
-    align-items: center;
-    height:fit-content;
-    background-color: rgb(233, 233, 233);
-    color:rgb(0, 0, 0);
-    font-family: 'Times New Roman', Times, serif;
-}
-
-main{
-
-    border-style: solid;
-    margin: 10px;
-}
-
-section {
-
-    border-style: solid;
-    margin: 10px;
-}
-
-article {
-
-    border-style: solid;
-    margin: 10px;
-}
-
-aside {
-
-    border-style: solid;
-
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #c0e8ff;
-    overflow-x: hidden;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('Assets/img/EditedBackGroundIMG3000x1995.jpg'); /* Your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: makes it stay on scroll */
     
+  }
+  
+  header {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: #61dafb;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  section {
+    background-color:rgba(0, 0, 0, 0.50);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    color: #e2e2e2;
+  }
 
-}
-a {
-    color: rgb(0, 32, 100);
-}
+  h3 {
+    color: #e2e2e2;
+  }
 
-a:visited {
-    color:rgb(90, 0, 102);
-}
+  p {
+    color: #e2e2e2;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .project {
+    background-color: rgba(0, 0, 0, 0.50);
+    border-left: 4px solid #470d0d;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  
+  .project:hover {
+    transform: scale(1.02);
+  }
+  
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    list-style: none;
+    gap: 0.5rem;
+  }
+  
+  .skills-list li {
+    background-color: #470d0d;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #111;
+    color: #aaa;
+  }
 
-a:hover, a:active {
-    color: rgb(0, 107, 18);
-}
-h1 {
-    color: rgb(0, 0, 0);
-}
+  .about-section .about-content {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .profile-pic {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .about-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1rem;
+    background-color: #470d0d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .about-btn:hover {
+    background-color: #409fc7;
+  }
 
-p {
-    color: black;
-}
-
-hr {
-    border-color: rgb(0, 0, 0);
-}
+  /* Layout for BIOGRAPHY page */
+.about-page {
+    background-image: url('Assets/Img/EditedBackGroundIMG3000x1995.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .about-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .about-text {
+    flex: 1;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  header, footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  
